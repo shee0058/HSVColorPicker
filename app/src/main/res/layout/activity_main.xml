@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.algonquincollege.shee0058.hsvcolorpicker.MainActivity">
+
+    <TextView
+        android:id="@+id/colorSwatch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:height="200dp"
+        android:background="#000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Hue SeekBar and Label-->
+
+    <SeekBar
+        android:id="@+id/hSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hue"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/hue_gradient"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/hue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/colorSwatch"
+        android:layout_marginTop="12dp"
+        android:labelFor="@id/hSB"
+        android:text="@string/hue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Saturation SeekBar and Label-->
+
+    <SeekBar
+        android:id="@+id/sSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saturation"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/saturation_gradient"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/saturation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hSB"
+        android:layout_marginTop="12dp"
+        android:labelFor="@id/sSB"
+        android:text="@string/saturation"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Value SeekBar and Label-->
+
+    <SeekBar
+        android:id="@+id/vSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/value"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/value_gradient"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sSB"
+        android:layout_marginTop="12dp"
+        android:labelFor="@id/vSB"
+        android:text="@string/value"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vSB"
+        android:layout_marginTop="77dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBlack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonRed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonLime"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FF00"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonBlue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#0000FF"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonYellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#FFFF00"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonCyan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFF"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonMagenta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#FF00FF"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonSilver"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#C0C0C0"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonGray"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonMaroon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#800000"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonOlive"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#808000"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonGreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#008000"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonPurple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#800080"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonTeal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#008080"
+                android:onClick="onButtonTap"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonNavy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#000080"
+                android:onClick="onButtonTap"
+                android:text="" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HSV Color Picker</string>
+    <string name="hue">Hue</string>
+    <string name="saturation">Saturation</string>
+    <string name="value">Value/Lightness</string>
+    <string name="hueProgress">hue: %1d</string>
+    <string name="saturationProgress">saturation: %1d</string>
+    <string name="valueProgress">value: %1d</string>
+    <string name="action_about">About</string>
+    <string name="author">Owen Sheehan (shee0058)</string>
+</resources>
